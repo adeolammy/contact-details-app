@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <title>Phone Contact list</title> -->
+</head>
+<body>
+<header>
+    <section>
+        <div id="main-header " class="bg-info">
+            <div class="container">
+                <h3 id="title" class="">PHONE CONTACT</h3>
+                <div class=" align-self-center">
+                    <input type="text" id="filters" class="form-control   w-50 bg-light" placeholder="Search">
+                </div>  
+            </div>
+        </div>
+    </section>
+</header>
+<section>
+    <div id="main" class="card card-body">
+        <!-- <h2 class="title">Add Contact</h2> -->
+        <form id="addform" class="form-row mb-3">
+            <input id="addDetails" type="text" class="form-control mr-2 w-25 bg-light text-truncate " placeholder ="Name">
+            <input id="occp_Details" type="text" class="form-control mr-2 w-25 bg-light text-truncate " placeholder ="Occupation">
+            <input id="phone_Details" type="text" class="form-control mr-2 w-25 bg-light text-truncate " placeholder ="Number">
+            <input type="submit" class="btn btn-dark" value="submit">
+           
+        </form>
+       
+
+        <!-- <h2 class="title text-center">MY CONTANTS</h2> -->
+        <ul id="items" class="list-group">
+            <li class="list-group-item">
+                    <div class="media-main">
+                            <a class="pull-left " href="#">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFiVey9MixnzoDe-rj88kou_B0WOACquu11A&usqp=CAU" class="rounded float-left" alt="...">
+                    
+                            </a>
+                            <div class="pull-right btn-group-sm">
+                                    <a href="#" class="btn btn-success tooltips"  data-original-title="Edit">
+                                        <i class="fa fa-pencil"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger tooltips delete"  data-original-title="Delete">
+                                        <i class="fa fa-close"></i>
+                                    </a>
+                            </div>
+
+
+                            <div class="infom  ml-5">
+                                <h4>JAMES ADEMOLA</h4>
+                                <p class="text-black-50 font-weight-bold ml-4">ACCOUNTANT</p>
+                                <a class="text-black font-weight-normal " href="#">+2348065435646</a>
+                                                        
+                            </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                
+                    <ul class="social-links list-inline d-flex  ">
+                        <li>
+                            <a class=" mr-4 " href="#" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a class=" mr-4" href="#" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a  class=" mr-4" href="#" data-original-title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a class=" mr-4" href="#" data-original-title="Skype"><i class="fa fa-skype"></i></a>
+                        </li>
+                        <li>
+                            <a class=" mr-4" href="#" data-original-title="Message"><i class="fa fa-envelope-o"></i></a>
+                        </li>
+                    </ul>
+            </li>
+
+                <!-- items 2  items 2  items 2 items 2   items 2   items 2   items 2   items 2 -->
+                <!-- items 2  items 2  items 2 items 2   items 2   items 2   items 2   items 2 -->
+
+            <li class="list-group-item">
+                    <div class="media-main">
+                    <a class="pull-left " href="#">
+                        <img src="data:image/jpeg;base64,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" class="rounded float-left" alt="...">
+                        
+                    </a>
+                    <div class="pull-right btn-group-sm">
+                            <a href="#" class="btn btn-success tooltips"  data-original-title="Edit">
+                                <i class="fa fa-pencil"></i>
+                            </a>
+                            <a href="#" class="btn btn-danger tooltips delete"  data-original-title="Delete">
+                                <i class="fa fa-close"></i>
+                            </a>
+                    </div>
+
+
+                    <div class="infom ">
+                        <h4>EMEKA AGU</h4>
+                        <p class="text-black-50 font-weight-bold ">PROGRAMMER</p>
+                        <a class=" mr-4 text-black font-weight-normal p-b-10" href="#">+2348345667745</a>
+                                                
+                    </div>
+                </div>
+
+                    <div class="clearfix"></div>
+                    <!-- <hr> -->
+                    <ul class="social-links list-inline d-flex  ">
+                        <li>
+                            <a class=" mr-4 " href="#" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a class=" mr-4" href="#" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a  class=" mr-4" href="#" data-original-title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a class=" mr-4" href="#" data-original-title="Skype"><i class="fa fa-skype"></i></a>
+                        </li>
+                        <li>
+                            <a class=" mr-4" href="#" data-original-title="Message"><i class="fa fa-envelope-o"></i></a>
+                        </li>
+                    </ul>
+            </li>
+
+                <!-- items 2  items 2  items 2 items 2   items 2   items 2   items 2   items 2 -->
+                <!-- items 2  items 2  items 2 items 2   items 2   items 2   items 2   items 2 -->
+
+            <li class="list-group-item">
+                        <div class="media-main">
+                    <a class="pull-left " href="#">
+                        <img src="https://res.cloudinary.com/demo/image/upload/c_fill,w_100,h_100,g_face,dpr_2.0/smiling_man.jpg" class="rounded float-left" alt="...">
+                        
+                    </a>
+                    <div class="pull-right btn-group-sm">
+                            <a href="#" class="btn btn-success tooltips"  data-original-title="Edit">
+                                <i class="fa fa-pencil"></i>
+                            </a>
+                            <a href="#" class="btn btn-danger tooltips delete"  data-original-title="Delete">
+                                <i class="fa fa-close"></i>
+                            </a>
+                    </div>
+
+
+                    <div class="info or details  mr-5">
+                        <h4>MARK JOHNSON</h4>
+                        <p class="text-black-50 font-weight-bold ">DOCTOR</p>
+                        <a class=" mr-4 text-black font-weight-normal p-b-10" href="#">+23470735646</a>
+                                                
+                    </div>
+                </div>
+
+                    <div class="clearfix"></div>
+                    <!-- <hr> -->
+                    <ul class="social-links list-inline d-flex  ">
+                        <li>
+                            <a class=" mr-4 " href="#" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a class=" mr-4" href="#" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a  class=" mr-4" href="#" data-original-title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a class=" mr-4" href="#" data-original-title="Skype"><i class="fa fa-skype"></i></a>
+                        </li>
+                        <li>
+                            <a class=" mr-4" href="#" data-original-title="Message"><i class="fa fa-envelope-o"></i></a>
+                        </li>
+                    </ul>
+            </li>
+
+                <!-- items 2  items 2  items 2 items 2   items 2   items 2   items 2   items 2 -->
+                <!-- items 2  items 2  items 2 items 2   items 2   items 2   items 2   items 2 -->
+
+
+            <li class="list-group-item">
+                        <div class="media-main">
+                    <a class="pull-left " href="#">
+                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDzdvbXmKmEDg1_ouafaDu1lE-mjkPOzzswQ&usqp=CAU" class="rounded float-left" alt="...">
+                        
+                    </a>
+                    <div class="pull-right btn-group-sm">
+                            <a href="#" class="btn btn-success tooltips"  data-original-title="Edit">
+                                <i class="fa fa-pencil"></i>
+                            </a>
+                            <a href="#" class="btn btn-danger tooltips delete"  data-original-title="Delete">
+                                <i class="fa fa-close"></i>
+                            </a>
+                    </div>
+
+
+                    <div class="info or details  mr-5">
+                        <h4>KOLADE DEMOLA</h4>
+                        <p class="text-black-50 font-weight-bold ">POLITICIAN</p>
+                        <a class=" mr-4 text-black font-weight-normal p-b-10" href="#">+234094435646</a>
+                                                
+                    </div>
+                </div>
+
+                    <div class="clearfix"></div>
+                    <!-- <hr> -->
+                    <ul class="social-links list-inline d-flex  ">
+                        <li>
+                            <a class=" mr-4 " href="#" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a class=" mr-4" href="#" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a  class=" mr-4" href="#" data-original-title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a class=" mr-4" href="#" data-original-title="Skype"><i class="fa fa-skype"></i></a>
+                        </li>
+                        <li>
+                            <a class=" mr-4" href="#" data-original-title="Message"><i class="fa fa-envelope-o"></i></a>
+                        </li>
+                    </ul>
+            </li>
+
+                <!-- items 4  items 4  items 4 items 4   items 4   items 4   items 4   items 4 -->
+                <!-- items 4  items 4  items 4 items 4   items 4   items 4   items 4   items 4 -->
+            <li class="list-group-item">
+                        <div class="media-main">
+                    <a class="pull-left " href="#">
+                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_REHpB9dSD_JLsvRg6D66bt44zjyI7So-Tg&usqp=CAU" class="rounded float-left" alt="...">
+                    </a>
+                    <div class="pull-right btn-group-sm">
+                            <a href="#" class="btn btn-success tooltips"  data-original-title="Edit">
+                                <i class="fa fa-pencil"></i>
+                            </a>
+                            <a href="#" class="btn btn-danger tooltips delete"  data-original-title="Delete">
+                                <i class="fa fa-close"></i>
+                            </a>
+                    </div>
+
+
+                    <div class="info or details  mr-5">
+                        <h4>AYUBA AUDU</h4>
+                        <p class="text-black-50 font-weight-bold ">WEB DESIGNER</p>
+                        <a class=" mr-4 text-black font-weight-normal p-b-10" href="#">+2348065435646</a>
+                                                
+                    </div>
+                </div>
+
+                    <div class="clearfix"></div>
+                    <!-- <hr> -->
+                    <ul class="social-links list-inline d-flex  ">
+                        <li>
+                            <a class=" mr-4 " href="#" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a class=" mr-4" href="#" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a  class=" mr-4" href="#" data-original-title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a class=" mr-4" href="#" data-original-title="Skype"><i class="fa fa-skype"></i></a>
+                        </li>
+                        <li>
+                            <a class=" mr-4" href="#" data-original-title="Message"><i class="fa fa-envelope-o"></i></a>
+                        </li>
+                    </ul>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+           
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
