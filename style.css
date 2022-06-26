@@ -1,5 +1,40 @@
-/* .infom ,.info{
-    /* background-color: aqua; */
-    /* margin-right: 30px!important;
-    padding-left: 3rem; */
-/* }  */
+
+.infom{
+    display: flex;
+    flex-direction: column;
+
+}
+.textarea{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: -6rem!important;
+    margin-left: 9rem!important;
+    text-align: justify;
+
+}
+
+ @media (max-width: 986px) {
+           .textarea{
+            margin-left: 12rem!important;
+
+            }
+
+             .social-links{
+                 margin-top: -3rem!important;
+        } 
+        }
+
+ @media (max-width: 796px) {
+           .textarea{
+            margin-top: 0.7rem!important;
+            width: 60vw!important;
+            height: 32vh;
+            margin-left: 6rem!important;
+    }
+        .social-links{
+                 margin-top: -5rem!important;
+        } 
+                
+            
+        }
