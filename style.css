@@ -4,19 +4,36 @@
     flex-direction: column;
 
 }
-.textarea{
+.textareas{
     display: flex;
     justify-content: center;
     align-self: center;
     margin-top: -6rem!important;
     margin-left: 9rem!important;
     text-align: justify;
+     
 
 }
 
+
+ .social-links li {
+                 
+                 
+                 margin-top: 0.5rem;
+                 margin-right: -0.8rem;
+        } 
+
+ .social-links li a{
+                padding: 0.3rem 0.5rem;
+                border-radius: 50%;
+                 background: rgb(236, 231, 231);
+     
+        } 
+
  @media (max-width: 986px) {
-           .textarea{
+           .textareas{
             margin-left: 12rem!important;
+            
 
             }
 
